@@ -34,3 +34,4 @@ The IPNS Blockchain system is expected to provide the following functionalities:
 * The system also provides a list of all the mappings associated with a given URI along with their transaction times
 
 While resolving references that are deeper in the Blockchain can take some time, they are considered inactive, hence, they can be cached for an extended period (as a function of the depth in the Blockchain).
+On the other hand when resolving a mapping with a supplied datetime, starting from the most recent block is not necessary, instead, skip indexing of blocks (at periodic intervals) can be used for short-circuiting the lookup.
